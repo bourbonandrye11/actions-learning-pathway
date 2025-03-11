@@ -23,6 +23,7 @@ jobs:
       with:
         node-version: 18
     - run: npm install
+    - run: npm init @eslint/config@latest
     - run: npm run test
   deploy:
     needs: test
